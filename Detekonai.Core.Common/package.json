@@ -1,0 +1,15 @@
+{
+  "name": "com.detekonai.core.common",
+  "version": "0.0.1",
+  "displayName": "Detekonai Common",
+  "description": "Detekonai common dependencies",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "keywords": [
+    "Detekonai"
+  ],
+  "author": {
+    "name": "Aeai",
+    "email": "aeai@detekonai.com"
+  }
+}
