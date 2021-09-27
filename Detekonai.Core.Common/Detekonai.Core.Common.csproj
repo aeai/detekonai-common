@@ -5,6 +5,12 @@
     <PackageId>Detekonai.Core.Common</PackageId>
     <Version>0.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright (c) 2021 Erik Takakura-Zajac</Copyright>
+    <PackageProjectUrl>https://github.com/aeai/detekonai-common</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aeai/detekonai-common.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes />
   </PropertyGroup>
 
 </Project>
