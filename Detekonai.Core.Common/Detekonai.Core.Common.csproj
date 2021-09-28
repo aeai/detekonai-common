@@ -11,6 +11,9 @@
     <RepositoryUrl>https://github.com/aeai/detekonai-common.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes />
+    <Configurations>Debug;Release;MasterDebug</Configurations>
+    <Authors>Aeai</Authors>
+    <Company>Detekonai</Company>
   </PropertyGroup>
 
 </Project>
