@@ -1,3 +1,16 @@
 {
-	"name": "Detekonai.Core.Common"
+    "name": "Detekonai.Core.Common",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c3fb3970bbab64a18b534b28695ae53c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

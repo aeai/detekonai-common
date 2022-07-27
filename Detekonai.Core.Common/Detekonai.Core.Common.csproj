@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>Detekonai.Core.Common</PackageId>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Copyright (c) 2021 Erik Takakura-Zajac</Copyright>
@@ -15,5 +15,9 @@
     <Authors>Aeai</Authors>
     <Company>Detekonai</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
 
 </Project>
