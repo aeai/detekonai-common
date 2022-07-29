@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -106,11 +107,9 @@ namespace Detekonai.Core.Common.Runtime
 
 		private uint GetDateHash(JToken token)
 		{
-			DateTime val = token.Value<DateTime>();
-			TimeSpan ts = val - new DateTime(1970, 1, 1);
-			byte[] dta = BitConverter.GetBytes(ts.TotalMilliseconds);
-			return MurmurHash3.Hash(dta, (uint)dta.Length, 19850922);
-		}
+			//using token.Value<DateTime> can cause exceptions if the DateParsing is set to DateTimeOffset so fallback to string here
+			return HashString(token.ToString());
+        }
 		private uint GetTimeSpanHash(JToken token)
 		{
 			TimeSpan val = token.Value<TimeSpan>();

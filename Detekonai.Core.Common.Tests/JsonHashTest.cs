@@ -267,6 +267,17 @@ namespace Detekonai.Core.Common.Tests
 		}
 
 		[Test]
+		public void Calculate_dont_break()
+		{
+			var hash = new JsonHash();
+			JToken ob = JObject.Parse("{\r\n  \"last_generation_time\": \"1970-01-01T01:00:00+01:00\"\r\n}");
+			uint ows1Hash = hash.Calculate(ob);
+			
+			Assert.That(ows1Hash, Is.Not.EqualTo(0));
+		}
+		
+
+		[Test]
 		public void Object_format_doesnt_matter()
 		{
 			var hash = new JsonHash();
