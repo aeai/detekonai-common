@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System;
+using System.Runtime.CompilerServices;
 namespace Detekonai.Core.Common
 {
 	public interface ILogConnector
@@ -12,6 +13,7 @@ namespace Detekonai.Core.Common
 		}
 
 		public void Log(object sender, string msg,  LogLevel level = LogLevel.Verbose, [CallerMemberName] string memberName = "", [CallerFilePath] string sourceFilePath = "", [CallerLineNumber] int sourceLineNumber = 0);
+		public void Log(object sender, string msg, Exception ex, [CallerMemberName] string memberName = "", [CallerFilePath] string sourceFilePath = "", [CallerLineNumber] int sourceLineNumber = 0);
 	}
 
 }
