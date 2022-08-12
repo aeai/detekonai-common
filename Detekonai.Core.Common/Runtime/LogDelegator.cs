@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Detekonai.Core.Common.Runtime
 {
-    public class LogDelegator : ILogConnector
+    public class LogDelegator : ILogger
     {
-        public ILogConnector Connector { get; set; }
+        public ILogger Connector { get; set; }
 
-        public LogDelegator(ILogConnector innerLog)
+        public LogDelegator(ILogger innerLog)
         {
             Connector = innerLog;
         }
@@ -19,7 +19,7 @@ namespace Detekonai.Core.Common.Runtime
         {
         }
 
-        public void Log(object sender, string msg, ILogConnector.LogLevel level = ILogConnector.LogLevel.Verbose, [CallerMemberName] string memberName = "", [CallerFilePath] string sourceFilePath = "", [CallerLineNumber] int sourceLineNumber = 0)
+        public void Log(object sender, string msg, ILogger.LogLevel level = ILogger.LogLevel.Verbose, [CallerMemberName] string memberName = "", [CallerFilePath] string sourceFilePath = "", [CallerLineNumber] int sourceLineNumber = 0)
         {
             Connector?.Log(sender, msg, level, memberName, sourceFilePath, sourceLineNumber);
         }

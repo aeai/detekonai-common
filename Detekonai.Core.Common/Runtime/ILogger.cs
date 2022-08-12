@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 namespace Detekonai.Core.Common
 {
-	public interface ILogConnector
+	public interface ILogger
 	{
 		public enum LogLevel
 		{

@@ -1,6 +1,6 @@
 {
   "name": "com.detekonai.core.common",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "displayName": "Detekonai Common",
   "description": "Detekonai common dependencies",
   "unity": "2019.1",
